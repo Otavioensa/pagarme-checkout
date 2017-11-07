@@ -1,0 +1,29 @@
+{
+  "name": "pagarme-checkout",
+  "version": "1.0.0",
+  "description": "Repository created for implementing pagar.me's checkout",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otavioensa/pagarme-checkout.git"
+  },
+  "author": "Otavio Augusto <otavioensa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Otavioensa/pagarme-checkout/issues"
+  },
+  "homepage": "https://github.com/Otavioensa/pagarme-checkout#readme"
+}
