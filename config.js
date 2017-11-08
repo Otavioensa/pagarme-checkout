@@ -3,8 +3,14 @@
 import { config } from 'dotenv'
 config()
 
-const serverConfig = {
+const server = {
   port: process.env.PORT
 }
 
-export default serverConfig
+const keys = {
+  api_key: process.env.API_KEY,
+  encryption_key: process.env.ENCRYPTION_KEY,
+  card_id: process.env.CARD_ID,
+}
+
+export { server, keys}
