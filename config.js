@@ -1,10 +1,10 @@
-'use strict'
 
 import { config } from 'dotenv'
+
 config()
 
 const server = {
-  port: process.env.PORT
+  port: process.env.PORT,
 }
 
 const keys = {
@@ -13,4 +13,4 @@ const keys = {
   card_id: process.env.CARD_ID,
 }
 
-export { server, keys}
+export { server, keys }

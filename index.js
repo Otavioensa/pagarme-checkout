@@ -1,6 +1,3 @@
-'use strict'
-
-
 
 import app from './app'
 import { server } from './config'

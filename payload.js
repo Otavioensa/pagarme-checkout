@@ -1,7 +1,8 @@
 
 import { keys } from './config'
 
-const api_key = keys.api_key
+const { api_key } = keys
+
 
 const capture = (token, amount) => ({
   method: 'POST',
@@ -13,4 +14,15 @@ const capture = (token, amount) => ({
   json: true,
 })
 
-export { capture }
+const transaction = (params) => {
+  const payload = Object.assign({ api_key }, params)
+
+  return {
+    method: 'POST',
+    uri: 'https://api.pagar.me/1/transactions',
+    body: payload,
+    json: true,
+  }
+}
+
+export { capture, transaction }

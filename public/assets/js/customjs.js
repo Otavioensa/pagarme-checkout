@@ -1,3 +1,4 @@
+/* eslint-disable */
 $(function() {
 	var pop = $('.popbtn');
 	var row = $('.row:not(:first):not(:last)');

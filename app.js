@@ -1,4 +1,3 @@
-'use strict'
 
 import express from 'express'
 import bodyParser from 'body-parser'
@@ -18,8 +17,8 @@ app.use((req, res, next) => {
   next(err)
 })
 
-app.use((err, req, res, next) => {
-  res.status(err.status || 500).render('error', { message: err.message})
+app.use((err, req, res) => {
+  res.status(err.status || 500).render('error', { message: err.message })
 })
 
 export default app
